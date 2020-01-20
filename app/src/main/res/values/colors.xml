@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ef8009</color>
+    <color name="colorPrimaryDark">#ef8009</color>
+    <color name="colorAccent">#ef8009</color>
+    <color name="orangeDark">#ef8009</color>
+    <color name="blackHint">#B1B1B1</color>
+    <color name="orangeNormal">#ef8009</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blackDark">#424242</color>
+    <color name="blackNormal">#616161</color>
+    <color name="backgroundList">#DCDCDC</color>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/camerasnap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/recordshot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin5"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin5">
+
+            <TextView
+                style="@style/TextView.White"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin5"
+                android:background="@drawable/text_black"
+                android:padding="@dimen/margin10"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/txt_recordshot"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cameraImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin5">
+
+            <Button
+                android:id="@+id/btNewRound"
+                style="@style/Button.Small.OrangeSmallRoundCorner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin2"
+                android:layout_weight="1"
+                android:text="@string/lbl_playnewround"
+                android:textSize="9sp" />
+
+            <Button
+                android:id="@+id/btExploreCourse"
+                style="@style/Button.Small.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin2"
+                android:layout_weight="1"
+                android:text="@string/lbl_explorecourse"
+                android:textSize="9sp" />
+
+            <Button
+                android:id="@+id/btAddFavourite"
+                style="@style/Button.Small.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin2"
+                android:layout_weight="1"
+                android:text="@string/lbl_addtofavorite"
+                android:textSize="9sp" />
+
+            <Button
+                android:id="@+id/btPracticeRange"
+                style="@style/Button.Small.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin2"
+                android:layout_weight="1"
+                android:text="@string/lbl_practicerange"
+                android:textSize="9sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/menu_group_1">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/hometab"
+            android:title="@string/tab_lbl_home" />
+    </group>
+
+    <group android:id="@+id/menu_group_4">
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_menu_logout"
+            android:title="@string/ic_menu_logout" />
+        <item
+            android:id="@+id/menu_terms_service"
+            android:icon="@drawable/ic_menu_terms_service"
+            android:title="@string/ic_menu_terms_service" />
+        <item
+            android:id="@+id/menu_help"
+            android:icon="@drawable/ic_menu_help"
+            android:title="@string/ic_menu_help" />
+        <item
+            android:id="@+id/menu_version_info"
+            android:icon="@drawable/ic_menu_version_info"
+            android:title="@string/ic_menu_version_info" />
+    </group>
+</menu>

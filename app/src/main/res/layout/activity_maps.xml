@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9" />
+
+    <!--<fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9" />-->
+
+    <RelativeLayout
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_margin="@dimen/margin5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/takePic12"
+            style="@style/Button.Small.OrangeSmallRoundCorner"
+            android:layout_alignParentStart="true"
+            android:drawableLeft="@drawable/camera_icon"
+            android:drawablePadding="@dimen/margin5"
+            android:text="@string/lbl_take_picture"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/skip12"
+            style="@style/Button.Small.Grey1"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:text="@string/lbl_skip"
+            android:background="@drawable/button_gray_small"
+          android:layout_marginRight="@dimen/margin5"/>
+    </RelativeLayout>
+</LinearLayout>

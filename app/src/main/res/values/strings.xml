@@ -1,0 +1,59 @@
+<resources>
+    <string name="Drawer_Open">Drawer Open</string>
+    <string name="Drawer_close">Drawer Close</string>
+
+    <!--login-->
+    <string name="app_name">HPS Golf</string>
+    <string name="mail_address_loginid">Mail Address(LoginId)</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="new_user_registration">New User Registration</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="help">Help</string>
+    <string name="txt_locale">日本語</string>
+
+    <!--forgot password -->
+    <string name="temporary_password_issue">Temporary Password Issue</string>
+
+    <!-- New user registration-->
+    <string name="hint_password">Password(Alphanumeric 8~32 char)</string>
+    <string name="hint_password_re">Password(re)(Alphanumeric 8~32 char)</string>
+    <string name="hint_lastname">LastName(Max 32 char)</string>
+    <string name="hint_firsetname">FirstName(Max 32 char)</string>
+    <string name="lbl_signup">SignUp</string>
+
+    <!--menu -->
+    <string name="tab_lbl_home">Home</string>
+    <string name="ic_menu_logout">Logout</string>
+    <string name="ic_menu_terms_service">Terms of Service</string>
+    <string name="ic_menu_help">Help</string>
+    <string name="ic_menu_version_info">Version Information</string>
+
+    <!-- laytout fragment-->
+    <string name="lbl_map">Map</string>
+    <string name="lbl_play">Play</string>
+    <string name="txt_courses">We found following golf courses near you!</string>
+
+    <!-- activity map-->
+    <string name="lbl_take_picture">Take Picture</string>
+    <string name="lbl_skip">Skip</string>
+
+    <!-- play book dialog-->
+    <string name="txt_play_golf">Let\'s Play Golf</string>
+    <string name="lbl_bookslot">Book Your slot</string>
+    <string name="lbl_playnow">Play Now</string>
+    <string name="lbl_cancel">Cancel</string>
+
+    <!--camerta snap -->
+    <string name="txt_recordshot">Record Shot</string>
+    <string name="lbl_playnewround">PLAY NEW ROUND</string>
+    <string name="lbl_explorecourse">EXPLORE COURSE</string>
+    <string name="lbl_addtofavorite">ADD TO FAVORITE</string>
+    <string name="lbl_practicerange">PRACTICE RANGE</string>
+
+    <!-- scored card-->
+    <string name="txt_coursecount">Course1</string>
+    <string name="you">You</string>
+    <string name="scored">Scored!</string>
+</resources>

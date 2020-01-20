@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--logion-->
+    <string name="app_name">HPS Golf</string>
+    <string name="mail_address_loginid">メールアドレス（ログインID)</string>
+    <string name="password">パスワード</string>
+    <string name="login">ログイン</string>
+    <string name="forgot_password">パスワードをお忘れですか</string>
+    <string name="create_new_account">新しいアカウントを作成する</string>
+    <string name="new_user_registration">新規ユーザー登録</string>
+    <string name="help">助けて</string>
+    <string name="txt_locale">English</string>
+
+    <!--forgot password -->
+    <string name="temporary_password_issue">一時パスワードの問題</string>
+
+    <!-- New user registration-->
+    <string name="hint_password">パスワード（半角英数8~32文字）</string>
+    <string name="hint_password_re">パスワード（半角英数8~32文字）</string>
+    <string name="hint_lastname">姓（32文字以内）</string>
+    <string name="hint_firsetname">名（32文字以内）</string>
+    <string name="lbl_signup">サインアップ</string>
+
+    <!--menu -->
+    <string name="tab_lbl_home">ホーム</string>
+    <string name="ic_menu_logout">ログアウト</string>
+    <string name="ic_menu_terms_service">利用規約</string>
+    <string name="ic_menu_help">助けて</string>
+    <string name="ic_menu_version_info">バージョン情報</string>
+
+    <!-- laytout fragment-->
+    <string name="txt_courses">近くのゴルフコースを見つけました！</string>
+    <string name="lbl_map">地図</string>
+    <string name="lbl_play">遊びます</string>
+
+    <!-- activity map-->
+    <string name="lbl_take_picture">写真を撮る</string>
+    <string name="lbl_skip">スキップ</string>
+
+    <!-- play book dialog-->
+    <string name="txt_play_golf">ゴルフをしよう</string>
+    <string name="lbl_bookslot">あなたのスロットを予約</string>
+    <string name="lbl_playnow">今すぐプレーする</string>
+    <string name="lbl_cancel">キャンセル</string>
+
+    <!--camera snap -->
+    <string name="txt_recordshot">記録ショット</string>
+    <string name="lbl_playnewround">新しいラウンドをする</string>
+    <string name="lbl_explorecourse">エクスペリエンスコース</string>
+    <string name="lbl_addtofavorite">好きなものに加える</string>
+    <string name="lbl_practicerange">実践範囲</string>
+
+    <!-- scored card-->
+    <string name="txt_coursecount">コース1</string>
+    <string name="you">君は</string>
+    <string name="scored">得点する！</string>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="user"
+            type="com.hypersoft.golfapp.communication.models.User" />
+
+        <variable
+            name="signInActivity"
+            type="com.hypersoft.golfapp.ui.activity.SignInActivity" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/golfman" />
+
+                <TextView
+                    android:id="@+id/Title"
+                    style="@style/AppTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin22"
+                    android:text="@string/app_name" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/email1" />
+
+                    <EditText
+                        android:id="@+id/etEmailAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin8"
+                        android:hint="@string/mail_address_loginid"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:text="@{user.loginId}"
+                        android:textColorHint="@color/blackHint" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin10"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/password1" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin8"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:text="@{user.password}"
+                        android:textColorHint="@color/blackHint" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSignIn"
+                    style="@style/BigButtons"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:background="@drawable/orange_button"
+                    android:onClick="@{()->signInActivity.onLoginClick()}"
+                    android:text="@string/login" />
+
+                <TextView
+                    android:id="@+id/tvForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:onClick="@{()->signInActivity.ontForgotPasswordClick()}"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/orangeDark"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin5"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/create_new_account"
+                    android:textColor="@color/blackHint" />
+
+                <Button
+                    android:id="@+id/btnSignUp"
+                    style="@style/BigButtons"
+                    android:layout_marginTop="@dimen/margin5"
+                    android:background="@drawable/bg_black"
+                    android:onClick="@{()->signInActivity.onRegistrationClick()}"
+                    android:text="@string/new_user_registration" />
+
+                <TextView
+                    android:id="@+id/tvHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin10"
+                    android:text="@string/help"
+                    android:textColor="@color/orangeDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/txtLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:onClick="@{()->signInActivity.ontxtLocalClick()}"
+            android:paddingBottom="@dimen/margin5"
+            android:paddingRight="@dimen/margin5"
+            android:paddingTop="@dimen/margin5"
+            android:text="@string/txt_locale" />
+
+    </RelativeLayout>
+</layout>

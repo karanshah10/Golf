@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="golfCourse"
+            type="com.hypersoft.golfapp.communication.models.Course" />
+
+        <variable
+            name="golfCoursedAdapter"
+            type="com.hypersoft.golfapp.ui.adapter.GolfCourseAdapter" />
+
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin10"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            style="@style/TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin5"
+            android:text="@{golfCourse.courseName}"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/ivGolfCourse"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/golf_course"
+                app:riv_corner_radius="5dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin8"
+                android:background="@drawable/bg_grey"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/margin5">
+
+                <TextView
+                    android:id="@+id/tvdetails"
+                    style="@style/TextView"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="@{golfCourse.location}" />
+
+                <Button
+                    android:id="@+id/btnMap"
+                    style="@style/Button.Small.BlackSmallRoundCorner"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:onClick="@{()->golfCoursedAdapter.onMapClick()}"
+                    android:text="@string/lbl_map" />
+
+                <Button
+                    android:id="@+id/btnPlay"
+                    style="@style/Button.Small.OrangeSmallRoundCorner"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/margin5"
+                    android:onClick="@{()->golfCoursedAdapter.onPlayClick()}"
+                    android:text="@string/lbl_play" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>
+    <!--app:loadImage="@{golfCourse.golfCourse}"-->

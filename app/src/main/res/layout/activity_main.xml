@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e5e5e5">
+
+        <RelativeLayout
+            android:id="@+id/activity_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                app:elevation="0dp">
+
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <FrameLayout
+                android:id="@+id/mainContent"
+                android:layout_below="@+id/appBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:layout_below="@+id/appBarLayout"
+                 android:orientation="vertical">
+
+                 <android.support.design.widget.TabLayout
+                     android:id="@+id/tabLayout"
+                     android:layout_width="match_parent"
+                     android:layout_height="65dp"
+                     android:background="@color/colorAccent"
+                     app:tabIndicatorColor="@color/blackNormal"
+                     app:tabIndicatorHeight="0dp"
+                     app:tabMode="fixed"
+                     app:tabSelectedTextColor="@color/blackNormal"
+                     app:tabTextColor="@color/white" />
+
+                 <FrameLayout
+                     android:id="@+id/mainContent"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent" />
+             </LinearLayout>-->
+        </RelativeLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/header"
+            app:menu="@menu/drawer_menu" />
+    </android.support.v4.widget.DrawerLayout>
+</layout>
